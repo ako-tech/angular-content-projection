@@ -12,7 +12,8 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExpansionPanelComponent {
-  @ContentChild(TemplateRef) detailsTemplate?: TemplateRef<unknown>;
+  @ContentChild('summary') summaryTemplate?: TemplateRef<unknown>;
+  @ContentChild('details') detailsTemplate?: TemplateRef<unknown>;
   expanded = false;
 
   toggle(): void {
