@@ -6,10 +6,10 @@ El repositorio esta divido en 4 ramas para cada una de las opciones de proyecci�
 
 ## Ramas (Branches)
 
-- [<ng-content>](https://github.com/ako-tech/angular-content-projection)
-- [Un solo <ng-template>](https://github.com/ako-tech/angular-content-projection/tree/single-ng-template)
-- [Múltiples <ng-template> con Variables de Plantilla](https://github.com/ako-tech/angular-content-projection/tree/multiple-ng-template-with-template-vars)
-- [Múltiples <ng-template> con Directivas](https://github.com/ako-tech/angular-content-projection/tree/multiple-ng-template-with-directives)
+- [ng-content](https://github.com/ako-tech/angular-content-projection)
+- [Un solo ng-template](https://github.com/ako-tech/angular-content-projection/tree/single-ng-template)
+- [Múltiples ng-template con Variables de Plantilla](https://github.com/ako-tech/angular-content-projection/tree/multiple-ng-template-with-template-vars)
+- [Múltiples ng-template con Directivas](https://github.com/ako-tech/angular-content-projection/tree/multiple-ng-template-with-directives)
 
 ## Comandos
 
