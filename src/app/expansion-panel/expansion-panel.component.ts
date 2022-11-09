@@ -4,6 +4,10 @@ import {
   ContentChild,
   TemplateRef,
 } from '@angular/core';
+import {
+  ExpansionPanelDetailsContentDirective,
+  ExpansionPanelSummaryContentDirective,
+} from './directives';
 
 @Component({
   selector: 'ako-expansion-panel',
@@ -12,8 +16,10 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExpansionPanelComponent {
-  @ContentChild('summary') summaryTemplate?: TemplateRef<unknown>;
-  @ContentChild('details') detailsTemplate?: TemplateRef<unknown>;
+  @ContentChild(ExpansionPanelSummaryContentDirective, { read: TemplateRef })
+  summaryTemplate?: TemplateRef<unknown>;
+  @ContentChild(ExpansionPanelDetailsContentDirective, { read: TemplateRef })
+  detailsTemplate?: TemplateRef<unknown>;
   expanded = false;
 
   toggle(): void {
