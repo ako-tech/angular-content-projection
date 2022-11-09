@@ -1,0 +1,7 @@
+<ako-expansion-panel-summary (click)="toggle()" [class.expanded]="expanded">
+  <ng-content select=".ep-summary-content"></ng-content>
+</ako-expansion-panel-summary>
+
+<div *ngIf="expanded">
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  min-height: 50px;
+  white-space: none;
+  font-weight: 500;
+  background-color: #e0eded;
+  padding: var(--half-separation) var(--base-separation);
+  justify-content: flex-start;
+
+  & > * {
+    margin-right: var(--base-separation);
+  }
+
+  &:hover {
+    background-color: #c6dada;
+  }
+
+  &.expanded > img {
+    transform: rotateZ(90deg);
+  }
+}
+
+img {
+  transition: transform 200ms ease-in-out;
+}

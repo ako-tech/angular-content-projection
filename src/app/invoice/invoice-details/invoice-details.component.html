@@ -1,0 +1,7 @@
+<ng-container *ngFor="let service of invoice.services">
+  <span>{{ service.description }}</span>
+  <span>{{ service.amount | number: "1.2-2" }}</span>
+</ng-container>
+
+<span>Total</span>
+<span>{{ invoice.total | number: "1.2-2" }}</span>

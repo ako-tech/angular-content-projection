@@ -1,0 +1,8 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  padding-top: var(--base-separation);
+  gap: 8px;
+}
