@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ContentChild,
+  TemplateRef,
+} from '@angular/core';
 
 @Component({
   selector: 'ako-expansion-panel',
@@ -7,6 +12,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExpansionPanelComponent {
+  @ContentChild(TemplateRef) detailsTemplate?: TemplateRef<unknown>;
   expanded = false;
 
   toggle(): void {

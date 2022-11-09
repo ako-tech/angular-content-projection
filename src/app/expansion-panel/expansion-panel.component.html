@@ -3,5 +3,5 @@
 </ako-expansion-panel-summary>
 
 <div *ngIf="expanded">
-  <ng-content></ng-content>
+  <ng-container *ngTemplateOutlet="detailsTemplate ?? null"></ng-container>
 </div>
