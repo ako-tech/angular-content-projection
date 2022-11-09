@@ -1,9 +1,14 @@
 <ako-expansion-panel *ngFor="let invoice of invoices">
-  <ng-template #summary>
+  <!-- <ng-template akoExpansionPanelSummaryContent>
     <div>{{ invoice.id }}</div>
-  </ng-template>
+  </ng-template> -->
+  <div *akoExpansionPanelSummaryContent>{{ invoice.id }}</div>
 
-  <ng-template #details>
+  <!-- <ng-template akoExpansionPanelDetailsContent>
     <invoice-details [invoice]="invoice"></invoice-details>
-  </ng-template>
+  </ng-template> -->
+  <invoice-details
+    *akoExpansionPanelDetailsContent
+    [invoice]="invoice"
+  ></invoice-details>
 </ako-expansion-panel>
